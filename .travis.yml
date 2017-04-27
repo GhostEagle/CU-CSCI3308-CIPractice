@@ -1,8 +1,8 @@
 language: c
 
-compiler: gcc
+compiler: -gcc
 
-install: sudo dep
+install: make dep
 
 script: make test
 
