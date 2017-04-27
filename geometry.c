@@ -69,3 +69,16 @@ void coord_2d_midpoint(coord_2d_t* mid, const coord_2d_t* a, const coord_2d_t* b
     mid->y = ((a->y + b->y) / 2.0 );
 
 }
+
+double coord_2d_area_triangle(const coord_2d_t *a, const coord_2d_t *b, const coord_2d_t *c){
+    int Ax = a->x;
+    int Ay = a->y;
+    int Bx = b->x;
+    int By = b->y;
+    int Cx = c->x;
+    int Cy = c->y;
+
+    int area = abs(((Ax * (By - Cy)) + (Bx * (Cy - Ay)) + (Cx * (Ay - By)))/2);
+
+    return area;
+}
