@@ -5,3 +5,5 @@ compiler: gcc
 install: sudo dep
 
 script: make test
+
+sudo: required
